@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ورود دانش‌آموزان</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:tahoma;
+}
+
+body{
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:linear-gradient(135deg,#dbeafe,#fdf2f8);
+    padding:20px;
+}
+
+.box{
+    width:1000px;          /* پهن‌تر */
+    max-width:100%;
+    min-height:420px;      /* بلندتر */
+    background:#fff;
+    display:flex;
+    border-radius:14px;
+    overflow:hidden;
+    box-shadow:0 10px 25px rgba(0,0,0,.1);
+}
+
+.info,.login{
+    flex:1;
+    padding:35px;
+}
+
+.info{
+    border-left:1px solid #eee;
+    background:#f8fafc;
+}
+
+.info h2,.login h2{
+    margin-bottom:15px;
+    color:#1e3a8a;
+}
+
+.info p{
+    color:#555;
+    line-height:1.9;
+}
+
+input{
+    width:100%;
+    padding:12px;
+    margin:10px 0;
+    border-radius:10px;
+    border:1px solid #ddd;
+    outline:none;
+    background:#f9fafb;   /* رنگ ملایم برای ورودی */
+    transition:.2s;
+}
+
+input:focus{
+    border-color:#6366f1;
+    background:#fff;
+}
+
+button{
+    width:100%;
+    padding:12px;
+    margin-top:10px;
+    border:0;
+    border-radius:10px;
+    cursor:pointer;
+    font-size:15px;
+    color:white;
+    background:linear-gradient(135deg,#6366f1,#3b82f6,#06b6d4);
+    transition:.3s;
+}
+
+button:hover{
+    transform:translateY(-1px);
+    opacity:.95;
+}
+
+@media(max-width:768px){
+    .box{
+        flex-direction:column;
+        min-height:auto;
+    }
+
+    .info{
+        border-left:none;
+        border-bottom:1px solid #eee;
+    }
+}
+</style>
+
+</head>
+
+<body>
+
+<div class="box">
+
+    <div class="info">
+        <h2>درباره مدرسه</h2>
+        <p>
+            سامانه ورود دانش‌آموزان برای ثبت اطلاعات و ورود به سیستم مدرسه طراحی شده است.
+            محیطی ساده، سریع و امن برای استفاده دانش‌آموزان.
+        </p>
+    </div>
+
+    <div class="login">
+        <h2>ورود به سامانه</h2>
+
+        <input type="text" placeholder="نام">
+        <input type="tel" placeholder="شماره تلفن">
+
+        <button>ورود</button>
+    </div>
+
+</div>
+
+</body>
+</html>
+<script src=id.js></script>
